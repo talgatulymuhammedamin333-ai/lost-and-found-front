@@ -22,8 +22,8 @@ function HeroTitle() {
             <button className='bg-black text-[20px] p-3 cursor-pointer rounded-[10px] text-white'>Толықырақ білу</button>
         </div>
         <div>
-            <div className='relative'><img className='absolute bottom-[-30px] rotate-350 w-40' src="../public/firework.png.png" alt="" /></div>
-            <div className=' relative bg-amber-300 w-130 h-60 right-5 mt-50 rounded-[10px] '><img className='absolute w-130  bottom-[-37px] ' src="public/kid.png" alt="" /></div>
+            <div className='relative'><img className='absolute bottom-[-30px] rotate-350 w-40' src="firework.png" alt="" /></div>
+            <div className=' relative bg-amber-300 w-130 h-60 right-5 mt-50 rounded-[10px] '><img className='absolute w-130  bottom-[-37px] ' src="kid.png" alt="" /></div>
         </div>
     </div>
   )
