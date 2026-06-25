@@ -46,8 +46,6 @@ function Profile() {
     localStorage.clear()
     navigate('/')
   }
-  
-  console.log(img)
 
 
   return (
@@ -57,7 +55,7 @@ function Profile() {
     ) : (
     singed ? (
     <Link to={'/profile'} className=' border-2 cursor-pointer border-gray-500 border-solid rounded-full w-10 h-10 ml-41'>
-      <img className=' w-full h-full rounded-full' src={`https://lost-and-found-2-i4ut.onrender.com/${img}`} alt="" />
+      <img className=' w-full h-full rounded-full' src={`https://lost-and-found-2-i4ut.onrender.com/uploads/${img}`} alt="" />
     </Link>
     ) : (
       <div className='flex gap-2 -ml-9'>
