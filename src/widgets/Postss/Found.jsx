@@ -20,7 +20,7 @@ function Found() {
 const getPosts = async () => {
     try {
         const result = await axios.get(
-            'https://lost-and-found-1fv4.onrender.com/posts/found'
+            'https://lost-and-found-2-i4ut.onrender.com/posts/found'
         );
         console.log(result)
         setPosts(result.data)
@@ -46,7 +46,7 @@ console.log(posts)
             <div key={post.id} className="bg-green-100 w-72 h-full rounded-3xl overflow-hidden shadow-lg shadow-2xl duration-300">
 
             <div className="relative">
-                <img className="w-full h-52 object-cover" src={`https://lost-and-found-1fv4.onrender.com/uploads/${post.image_url}`}  alt=""/>
+                <img className="w-full h-52 object-cover" src={`https://lost-and-found-2-i4ut.onrender.com/uploads/${post.image_url}`}  alt=""/>
                     <span className="absolute top-3 right-3 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">{post.status}</span>
                     </div>
                 <div className="p-4">

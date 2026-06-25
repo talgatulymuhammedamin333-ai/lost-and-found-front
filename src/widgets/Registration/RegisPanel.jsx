@@ -52,7 +52,7 @@ function RegisPanel() {
             }
 
             try {
-                let send = await axios.post('https://lost-and-found-1fv4.onrender.com/register', {
+                let send = await axios.post('https://lost-and-found-2-i4ut.onrender.com/register', {
                     name: name,
                     surname: surname,
                     email: email,

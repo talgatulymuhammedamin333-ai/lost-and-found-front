@@ -15,7 +15,7 @@ function AddPost() {
   const getUserId = async () => {
     try {
         const data = await axios.post(
-        'https://lost-and-found-1fv4.onrender.com/profile',
+        'https://lost-and-found-2-i4ut.onrender.com/profile',
         { id: 1 },
         {
             headers: {
@@ -44,7 +44,7 @@ function AddPost() {
     formData.append('phone', phone),
     formData.append('postimg', image)
       try {
-        let result = await axios.post('https://lost-and-found-1fv4.onrender.com/add/post', 
+        let result = await axios.post('https://lost-and-found-2-i4ut.onrender.com/add/post', 
           formData,
           {
             headers: {

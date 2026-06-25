@@ -20,7 +20,7 @@ function Profile() {
   const getUser = async () => {
     try {
       
-      const data = await axios.post('https://lost-and-found-1fv4.onrender.com/profile',{id: 1}, {
+      const data = await axios.post('https://lost-and-found-2-i4ut.onrender.com/profile',{id: 1}, {
         headers: {
           "Content-Type": "multipart/form-data",
           Authorization: 'Bearer ' + localStorage.getItem('token')
@@ -57,7 +57,7 @@ function Profile() {
     ) : (
     singed ? (
     <Link to={'/profile'} className=' border-2 cursor-pointer border-gray-500 border-solid rounded-full w-10 h-10 ml-41'>
-      <img className=' w-full h-full rounded-full' src={`https://lost-and-found-1fv4.onrender.com/${img}`} alt="" />
+      <img className=' w-full h-full rounded-full' src={`https://lost-and-found-2-i4ut.onrender.com/${img}`} alt="" />
     </Link>
     ) : (
       <div className='flex gap-2 -ml-9'>

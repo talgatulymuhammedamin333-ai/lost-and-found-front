@@ -13,7 +13,7 @@ function ReadMore() {
 
   const getPost = async () => {
     try {
-      const result = await axios.get(`https://lost-and-found-1fv4.onrender.com/post/${id}`)
+      const result = await axios.get(`https://lost-and-found-2-i4ut.onrender.com/post/${id}`)
       setPost(result.data[0])
       console.log(result)
     } catch (e) {
@@ -27,7 +27,7 @@ function ReadMore() {
     <div className="flex justify-center py-10 px-4min-h-screen">
       <div className="bg-white shadow-xl rounded-3xl w-full max-w-4xl overflow-hidden">
 
-        <img src={`https://lost-and-found-1fv4.onrender.com/uploads/${post.image_url}`} alt={post.title} className="w-full h-96 object-cover" />
+        <img src={`https://lost-and-found-2-i4ut.onrender.com/uploads/${post.image_url}`} alt={post.title} className="w-full h-96 object-cover" />
 
         <div className="p-8">
 
@@ -36,7 +36,7 @@ function ReadMore() {
 
             <span className={ post.status === 'lost' ? 'bg-red-500 text-white px-5 py-2 rounded-full font-semibold w-fit': 'bg-green-500 text-white px-5 py-2 rounded-full font-semibold w-fit'}> {post.status} </span> </div>
 
-          <div className="flex items-center gap-4 border-b pb-6 mb-8"> <img src={`https://lost-and-found-1fv4.onrender.com/uploads/${post.profileimg}`} alt="" className="w-16 h-16 rounded-full object-cover border"/> <div>
+          <div className="flex items-center gap-4 border-b pb-6 mb-8"> <img src={`https://lost-and-found-2-i4ut.onrender.com/uploads/${post.profileimg}`} alt="" className="w-16 h-16 rounded-full object-cover border"/> <div>
               <h2 className="font-bold text-xl"> {post.name} {post.surname} </h2>
 
               <p className="text-gray-500"> {post.email} </p></div> </div>

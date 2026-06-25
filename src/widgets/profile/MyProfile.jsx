@@ -28,7 +28,7 @@
       const myProfile = async () => {
       try {
 
-        const result = await axios.post('https://lost-and-found-1fv4.onrender.com/profile',{id: 1}, {
+        const result = await axios.post('https://lost-and-found-2-i4ut.onrender.com/profile',{id: 1}, {
           headers: {
             "Content-Type": "multipart/form-data",
             Authorization: 'Bearer ' + localStorage.getItem('token')
@@ -62,7 +62,7 @@
 
       setEdit(false)
       try {
-        let result = await axios.put('https://lost-and-found-1fv4.onrender.com/updateProfile', 
+        let result = await axios.put('https://lost-and-found-2-i4ut.onrender.com/updateProfile', 
           formData,
           {
             headers: {
@@ -107,7 +107,7 @@
           <div className="relative flex justify-center">
             <label className='absolute' htmlFor="avatar"><Edit className={edit ? 'bg-gray-300 absolute left-10 bottom-6 rounded-4xl p-1 cursor-pointer ' : 'hidden bg-white absolute right-2 top-2 rounded-4xl p-1 cursor-pointer'} size={30}/></label>
             <input id='avatar' accept='image/*' onChange={handleImageChange} className='hidden' type="file" />
-            {edit ? <img src={preview || `https://lost-and-found-1fv4.onrender.com/uploads/${img}`} alt={preview} className="w-32 h-32 rounded-full border-4 border-gray-500 -mt-16 object-cover"/> : <img src={`https://lost-and-found-1fv4.onrender.com/uploads/${img}`} alt="" className="w-32 h-32 rounded-full border-4 border-gray-500 -mt-16 object-cover"/>}
+            {edit ? <img src={preview || `https://lost-and-found-2-i4ut.onrender.com/uploads/${img}`} alt={preview} className="w-32 h-32 rounded-full border-4 border-gray-500 -mt-16 object-cover"/> : <img src={`https://lost-and-found-2-i4ut.onrender.com/uploads/${img}`} alt="" className="w-32 h-32 rounded-full border-4 border-gray-500 -mt-16 object-cover"/>}
           </div>
 
           <div className="text-center p-6">
