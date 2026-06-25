@@ -29,6 +29,7 @@ function Profile() {
       if (data)
         
         setImg(data.data[0].profileimg)
+        console.log(img)
         localStorage.setItem('singed', JSON.stringify(true))
         
       } catch(e) {
