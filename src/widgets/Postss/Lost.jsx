@@ -43,7 +43,7 @@ console.log(posts)
             <div className="bg-white w-72 h-full rounded-3xl overflow-hidden shadow-lg shadow-2xl duration-300">
 
             <div className="relative">
-                <img className="w-full h-52 object-cover" src={`https://lost-and-found-2-i4ut.onrender.com/${post.image_url}`}  alt=""/>
+                <img className="w-full h-52 object-cover" src={`https://lost-and-found-2-i4ut.onrender.com/uploads/${post.image_url}`}  alt=""/>
                     <span className="absolute top-3 right-3 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">Lost</span>
                     </div>
                 <div className="p-4">
